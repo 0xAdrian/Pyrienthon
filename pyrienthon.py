@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# Grouper v.Beta
+# Pyrienthon v.Beta
 # @AdTrejo
 
 from os import listdir
@@ -9,6 +9,31 @@ import xlrd
 
 wb = Workbook()
 index = 2
+
+def banner():
+	print "           _________"
+	print "         /'        /|"
+	print "        /         / |_"
+	print "       /         /  //|"
+	print "      /_________/  ////|"
+	print "     |   _ _    | 8o////|"
+	print "     | /'// )_  |   8///|"
+	print "     |/ // // ) |   8o///|"
+	print "     / // // //,|  /  8//|"
+	print "    / // // /// | /   8//|"
+	print "   / // // ///__|/    8//|"
+	print "  /.(_)// /// |       8///|"
+	print " (_)' `(_)//| |       8////|___________"
+	print "(_) /_\ (_)'| |        8///////////////"
+	print "(_) \ / (_)'|_|         8/////////////"
+	print " (_)._.(_) d' Hb         8oooooooopb'"
+	print "   `(_)'  d'  H`b"
+	print "         d'   `b`b"
+	print "        d'     H `b"
+	print "       d'      `b `b"
+	print "      d'           `b"
+	print "     d'             `b"
+	return
 
 def complete(pluginID):
 	ind = str(index)
@@ -100,6 +125,4 @@ def process(file_name):
 	return
 
 files = listdir('./Nessus')
-initExcel()
-for rpfile in files:
-	process(rpfile)
+banner()
