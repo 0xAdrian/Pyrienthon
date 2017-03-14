@@ -126,3 +126,6 @@ def process(file_name):
 
 files = listdir('./Nessus')
 banner()
+initExcel()
+for f in files:
+	process(f)
